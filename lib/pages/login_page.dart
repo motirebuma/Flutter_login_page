@@ -15,21 +15,40 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.teal,
+        title: const Text(
+          'Logo',
+          style: TextStyle(
+            fontFamily: 'Pacifico',
+            fontSize: 20.0,
+          ),
+        ),
+        actions: const [
+          Icon(Icons.more_vert),
+        ],
+      ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 50),
-
               // logo
               const Icon(
                 Icons.person_rounded,
                 size: 100,
                 color: Colors.teal,
               ),
-
+              Text(
+                'Welcome back',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  letterSpacing: 2.0,
+                  fontSize: 15.0,
+                  color: Colors.teal.shade600,
+                ),
+              ),
               const SizedBox(height: 25),
 
               // username textfield
@@ -58,7 +77,10 @@ class LoginPage extends StatelessWidget {
                   children: [
                     Text(
                       'Forgot Password?',
-                      style: TextStyle(color: Colors.teal[800]),
+                      style: TextStyle(
+                          color: Colors.teal[800],
+                          fontFamily: 'Pacifico',
+                          letterSpacing: 3.0),
                     ),
                   ],
                 ),
@@ -84,7 +106,7 @@ class LoginPage extends StatelessWidget {
                   const Text(
                     'Register now',
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: Colors.teal,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

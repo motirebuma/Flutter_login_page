@@ -43,8 +43,8 @@ class LoginPage extends StatelessWidget {
               Text(
                 'Welcome back',
                 style: TextStyle(
-                  fontFamily: 'Pacifico',
-                  letterSpacing: 2.0,
+                  fontFamily: 'Poppins',
+                  letterSpacing: 1.0,
                   fontSize: 15.0,
                   color: Colors.teal.shade600,
                 ),
@@ -79,8 +79,8 @@ class LoginPage extends StatelessWidget {
                       'Forgot Password?',
                       style: TextStyle(
                           color: Colors.teal[800],
-                          fontFamily: 'Pacifico',
-                          letterSpacing: 3.0),
+                          fontFamily: 'Poppins',
+                          letterSpacing: 1.0),
                     ),
                   ],
                 ),
